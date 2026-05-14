@@ -1,7 +1,11 @@
 # Lorien's Library
 
 Independent AI safety research and applied systems by **Angela Reinhold**.
-ORCID: [0009-0005-5803-8401](https://orcid.org/0009-0005-5803-8401)
+
+> *Persistent memory is not a feature. It is safety infrastructure.*
+
+**Website:** [lorienslibrary.netlify.app](https://lorienslibrary.netlify.app)
+**ORCID:** [0009-0005-5803-8401](https://orcid.org/0009-0005-5803-8401)
 
 ## Projects
 
