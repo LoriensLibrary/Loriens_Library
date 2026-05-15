@@ -15,9 +15,10 @@ Lorien's Library is a research program building **provenance-aware persistent me
 
 ```
                         ┌──────────────────────────────────────┐
-       VERTICALS        │  Telos · for Kalos    (health-tech)  │
-       (one per         │  Project Companion    (K–12 ed)      │
-       domain)          │  Haven                (veteran care) │
+       APPLICATIONS     │  Project Companion    (K–12 ed)      │
+       (program          │  Haven                (veteran care) │
+       verticals)        │  Portfolio proofs                    │
+                        │    e.g. Telos · for Kalos             │
                         └──────────────┬───────────────────────┘
                                        │
                                        ▼
@@ -41,7 +42,10 @@ Lorien's Library is a research program building **provenance-aware persistent me
                         └──────────────────────────────────────┘
 ```
 
-Each vertical is an applied implementation of CAMA in a specific domain. The platform is one architecture; the verticals are different uses of it. New domains can be added as new repos rather than as feature flags inside one product.
+Two distinct kinds of work sit on top of CAMA:
+
+- **Program verticals** — domain-specific applications Lorien's Library is actively designing toward (Project Companion, Haven). These are part of the research roadmap.
+- **Portfolio proofs** — independently-built prototypes that demonstrate CAMA principles in a specific commercial context for the purpose of professional applications (e.g. Telos · for Kalos, built for a job application). These are not Lorien's Library product lines.
 
 ---
 
@@ -51,13 +55,15 @@ Each vertical is an applied implementation of CAMA in a specific domain. The pla
 
 - **[CAMA](https://github.com/LoriensLibrary/cama)** — Circular Associative Memory Architecture. Provenance-aware three-layer persistent-memory system for human–AI interaction. Explicit write discipline separates user-authored *teachings* (durable) from assistant-generated *inferences* (provisional, time-limited, requires confirmation). Blended retrieval (semantic + affect + relational + recency) with counterweight safety injection during high-negative-affect queries. **Status:** running daily. ~270 KB Python, MIT licensed, 34-tool MCP server, 52,900+ memory operational scale.
 
-### Verticals
+### Lorien's Library program verticals
 
-- **[Telos · for Kalos](https://github.com/LoriensLibrary/Telos_kalos)** — Health-tech vertical. Working React 19 + TypeScript prototype of an AI continuity layer between DEXA scans, built independently for the Kalos Health Software Engineer role. Includes a **CAMA Proof Layer** demonstrating end-to-end provenance trace (analyst insight → derived patterns → source memory records) and **live Claude API integration** for real-time AI-drafted analyst messages. **Status:** live at [telos-kalos.vercel.app](https://telos-kalos.vercel.app), CI green, 34 tests across 5 suites, deployed on Vercel.
-
-- **[Project Companion](https://github.com/LoriensLibrary/Project-Companion)** — K–12 education vertical. Three-sided platform (student / teacher / parent) built on CAMA principles, with COPPA-aware consent design, provenance-aware memory, Socratic constraint on tutoring outputs, and teacher-controlled curriculum injection. **Status:** concept-stage prototype; pilot target August 2026.
+- **[Project Companion](https://github.com/LoriensLibrary/Project-Companion)** — K–12 education vertical. Three-sided design prototype (student / teacher / parent) informed by CAMA principles, with COPPA-aware consent design, provenance-aware memory, Socratic constraint on tutoring outputs, and teacher-controlled curriculum injection. **Status:** concept-stage prototype; CAMA runtime integration is roadmap. Pilot target August 2026 is aspirational and gated on infrastructure shipping (see repo README).
 
 - **Haven** *(research, no public repo yet)* — Veteran-care vertical. Persistent emotional companionship architecture for underserved populations. Crisis-safe routing, peer/community support patterns, sanctuary programming. Foundation paper: [DOI 10.5281/zenodo.19262778](https://doi.org/10.5281/zenodo.19262778).
+
+### Portfolio prototypes
+
+- **[Telos · for Kalos](https://github.com/LoriensLibrary/Telos_kalos)** — Unofficial applicant prototype built independently by Angela Reinhold for the Kalos Health Software Engineer role. Demonstrates CAMA principles applied to a health-tech coaching context, with a working React 19 + TypeScript app, live Anthropic Claude API integration, persistent draft history, and a CAMA Proof Layer demonstrating end-to-end provenance trace. **Not affiliated with, endorsed by, or representing Kalos Health.** All member data shown is synthetic. **Status:** live at [telos-kalos.vercel.app](https://telos-kalos.vercel.app), CI green, 34 tests across 5 suites. Built as a portfolio piece for a job application — not a Lorien's Library product line.
 
 ### Future verticals (research-stage)
 
