@@ -1,3 +1,8 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![ORCID](https://img.shields.io/badge/ORCID-0009--0005--5803--8401-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0009-0005-5803-8401)
+[![Dataset on HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-cama--continuity--burden-yellow)](https://huggingface.co/datasets/LoriensLibrary/cama-continuity-burden)
+[![Live demo](https://img.shields.io/badge/Live%20demo-telos--kalos.vercel.app-brightgreen)](https://telos-kalos.vercel.app)
+
 # Lorien's Library
 
 Independent AI safety research and applied systems by **Angela Reinhold**.
@@ -6,6 +11,44 @@ Independent AI safety research and applied systems by **Angela Reinhold**.
 
 **Website:** [lorienslibrary.netlify.app](https://lorienslibrary.netlify.app)
 **ORCID:** [0009-0005-5803-8401](https://orcid.org/0009-0005-5803-8401)
+
+---
+
+## What this is
+
+Lorien's Library is the research program of Angela Reinhold — an independent AI safety researcher building **provenance-aware persistent memory for human–AI interaction**. The program is one running deployed system (CAMA), eleven DOI-registered preprints, a published dataset, and a working portfolio prototype demonstrating the architecture end-to-end. The thesis is straightforward: the moment an LLM-based system remembers anything across sessions, it becomes safety-critical, and the discipline for *how* it remembers has to be designed in — not bolted on. This repo is the index to all of it.
+
+---
+
+## Start here
+
+Pick the entry point that matches why you're here:
+
+### Researcher
+You care about the papers and the theory.
+- **Read first:** the foundational paper — *Circular Associative Memory Architecture: A Framework for Emotionally-Keyed AI Memory Systems* ([DOI 10.5281/zenodo.19051834](https://doi.org/10.5281/zenodo.19051834))
+- **Then:** the safety argument — *Memory as Safety Infrastructure* ([DOI 10.5281/zenodo.19244253](https://doi.org/10.5281/zenodo.19244253))
+- **Then:** the dataset — [CAMA Continuity Burden](https://huggingface.co/datasets/LoriensLibrary/cama-continuity-burden) (66,380 messages, 825 conversations, aggregate stats)
+
+### Builder
+You want to see working code.
+- **[cama](https://github.com/LoriensLibrary/cama)** — the production persistent-memory system. ~270 KB Python, 34-tool MCP server.
+- **[Telos · for Kalos](https://github.com/LoriensLibrary/Telos_kalos)** — full-stack React 19 + TypeScript app with live Claude API integration and a CAMA Proof Layer demonstrating end-to-end provenance trace. CI green, 34 tests across 5 suites.
+- **[Live demo](https://telos-kalos.vercel.app)** — synthetic data only, but the architecture is real.
+
+### Healthcare-AI reviewer
+You're evaluating this for a health-tech context.
+- **Start with Paper 7:** *Provenance-Aware Memory Architecture for Chronic Healthcare Continuity* ([DOI 10.5281/zenodo.19261530](https://doi.org/10.5281/zenodo.19261530)).
+- **See the prototype:** [telos-kalos.vercel.app](https://telos-kalos.vercel.app) — applicant-built, demonstrates CAMA principles in a health-coaching context. Not affiliated with Kalos Health; synthetic data only.
+- **Then read** the broader safety paper: [DOI 10.5281/zenodo.19244253](https://doi.org/10.5281/zenodo.19244253).
+
+### Collaborator / hiring manager
+You're trying to figure out whether to talk to Angela.
+- Read the [website](https://lorienslibrary.netlify.app) — richer than the GitHub presence.
+- Skim this README's architecture diagram and preprint list below.
+- Reach out: **lorienslibrary@gmail.com**.
+
+> **For healthcare AI reviewers:** start with Paper 7 (*"Provenance-Aware Memory Architecture for Chronic Healthcare Continuity"*, [DOI 10.5281/zenodo.19261530](https://doi.org/10.5281/zenodo.19261530)) and the Telos_kalos prototype at [telos-kalos.vercel.app](https://telos-kalos.vercel.app).
 
 ---
 
