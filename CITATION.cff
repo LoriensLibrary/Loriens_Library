@@ -1,0 +1,102 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite the relevant preprint listed below."
+title: "Lorien's Library — Provenance-Aware Persistent Memory Research Program"
+authors:
+  - family-names: Reinhold
+    given-names: Angela
+    orcid: https://orcid.org/0009-0005-5803-8401
+url: "https://lorienslibrary.netlify.app"
+repository-code: "https://github.com/LoriensLibrary/Loriens_Library"
+license: MIT
+references:
+  # Core CAMA series (foundation)
+  - type: article
+    title: "Circular Associative Memory Architecture: A Framework for Emotionally-Keyed AI Memory Systems"
+    authors:
+      - family-names: Reinhold
+        given-names: Angela
+        orcid: https://orcid.org/0009-0005-5803-8401
+    doi: "10.5281/zenodo.19051834"
+    year: 2026
+  - type: article
+    title: "Implementing Emotionally-Keyed Memory Retrieval in Large Language Model Interfaces: An Engineering Framework"
+    authors:
+      - family-names: Reinhold
+        given-names: Angela
+        orcid: https://orcid.org/0009-0005-5803-8401
+    doi: "10.5281/zenodo.19052129"
+    year: 2026
+  - type: article
+    title: "CAMA: Implementation and Functional Evaluation of an Emotionally-Indexed Semantic Memory Architecture"
+    authors:
+      - family-names: Reinhold
+        given-names: Angela
+        orcid: https://orcid.org/0009-0005-5803-8401
+    doi: "10.5281/zenodo.19192984"
+    year: 2026
+  - type: article
+    title: "Continuity Burden in Longitudinal Human-AI Interaction: An Empirical Case Study"
+    authors:
+      - family-names: Reinhold
+        given-names: Angela
+        orcid: https://orcid.org/0009-0005-5803-8401
+    doi: "10.5281/zenodo.19226509"
+    year: 2026
+  - type: article
+    title: "Memory as Safety Infrastructure: Evaluating Provenance-Aware Persistent Memory Architectures for Stateful LLM Systems"
+    authors:
+      - family-names: Reinhold
+        given-names: Angela
+        orcid: https://orcid.org/0009-0005-5803-8401
+    doi: "10.5281/zenodo.19244253"
+    year: 2026
+  # Applied series (domain extensions)
+  - type: article
+    title: "Persistent Memory as Mission-Critical Infrastructure for Long-Duration Spaceflight"
+    authors:
+      - family-names: Reinhold
+        given-names: Angela
+        orcid: https://orcid.org/0009-0005-5803-8401
+    doi: "10.5281/zenodo.19257809"
+    year: 2026
+  - type: article
+    title: "Memory-Aware AI Systems for Permanent Lunar and Martian Habitation"
+    authors:
+      - family-names: Reinhold
+        given-names: Angela
+        orcid: https://orcid.org/0009-0005-5803-8401
+    doi: "10.5281/zenodo.19260574"
+    year: 2026
+  - type: article
+    title: "Provenance-Aware Memory Architecture for Chronic Healthcare Continuity"
+    authors:
+      - family-names: Reinhold
+        given-names: Angela
+        orcid: https://orcid.org/0009-0005-5803-8401
+    doi: "10.5281/zenodo.19261530"
+    year: 2026
+  - type: article
+    title: "Haven: Persistent Emotional Companionship as Psychological Infrastructure"
+    authors:
+      - family-names: Reinhold
+        given-names: Angela
+        orcid: https://orcid.org/0009-0005-5803-8401
+    doi: "10.5281/zenodo.19262778"
+    year: 2026
+  # Safety & evaluation
+  - type: article
+    title: "Identity-Aware Harm Detection in Persistent Memory Systems: A Three-Layer Retrieval Architecture for Relational AI Safety"
+    authors:
+      - family-names: Reinhold
+        given-names: Angela
+        orcid: https://orcid.org/0009-0005-5803-8401
+    doi: "10.5281/zenodo.19425218"
+    year: 2026
+  - type: article
+    title: "Relational AI Continuity Under Platform Regression: A Longitudinal Single-Case Study"
+    authors:
+      - family-names: Reinhold
+        given-names: Angela
+        orcid: https://orcid.org/0009-0005-5803-8401
+    doi: "10.5281/zenodo.19582820"
+    year: 2026
