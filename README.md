@@ -16,7 +16,7 @@ Independent AI safety research and applied systems by **Angela Reinhold**.
 
 ## What this is
 
-Lorien's Library is the research program of Angela Reinhold — an independent AI safety researcher building **provenance-aware persistent memory for human–AI interaction**. The program is one running deployed system (CAMA), eleven DOI-registered preprints, a published dataset, and a working portfolio prototype demonstrating the architecture end-to-end. The thesis is straightforward: the moment an LLM-based system remembers anything across sessions, it becomes safety-critical, and the discipline for *how* it remembers has to be designed in — not bolted on. This repo is the index to all of it.
+Lorien's Library is the research program of Angela Reinhold — an independent AI safety researcher building **provenance-aware persistent memory for human–AI interaction**. The program consists of one operational research deployment (CAMA, single-participant), eleven DOI-registered preprints, a published aggregate-statistics dataset, and a working portfolio prototype demonstrating the architecture end-to-end. The thesis is straightforward: the moment an LLM-based system remembers anything across sessions, it becomes safety-critical, and the discipline for *how* it remembers has to be designed in — not bolted on. This repo is the index to all of it.
 
 ---
 
@@ -32,9 +32,9 @@ You care about the papers and the theory.
 
 ### Builder
 You want to see working code.
-- **[cama](https://github.com/LoriensLibrary/cama)** — the production persistent-memory system. ~270 KB Python, 34-tool MCP server.
-- **[Telos · for Kalos](https://github.com/LoriensLibrary/Telos_kalos)** — full-stack React 19 + TypeScript app with live Claude API integration and a CAMA Proof Layer demonstrating end-to-end provenance trace. CI green, 34 tests across 5 suites.
-- **[Live demo](https://telos-kalos.vercel.app)** — synthetic data only, but the architecture is real.
+- **[cama](https://github.com/LoriensLibrary/cama)** — Python MCP server implementing the memory architecture. 34 core tools plus 9 optional subsystems. 15-test pytest suite in CI. Single-participant operational deployment (~53,000 memories on the author's instance).
+- **[Telos · for Kalos](https://github.com/LoriensLibrary/Telos_kalos)** — full-stack React 19 + TypeScript app with live Claude API integration and a CAMA Proof Layer demonstrating end-to-end provenance trace. 41 tests across 6 suites in CI.
+- **[Live demo](https://telos-kalos.vercel.app)** — synthetic member data only; backend, Claude integration, and provenance trace are real.
 
 ### Healthcare-AI reviewer
 You're evaluating this for a health-tech context.
@@ -43,10 +43,15 @@ You're evaluating this for a health-tech context.
 - **Then read** the broader safety paper: [DOI 10.5281/zenodo.19244253](https://doi.org/10.5281/zenodo.19244253).
 
 ### Collaborator / hiring manager
-You're trying to figure out whether to talk to Angela.
-- Read the [website](https://lorienslibrary.netlify.app) — richer than the GitHub presence.
-- Skim this README's architecture diagram and preprint list below.
-- Reach out: **lorienslibrary@gmail.com**.
+Fastest path to evaluate the work:
+1. **[Telos_kalos](https://github.com/LoriensLibrary/Telos_kalos)** — deployed React 19 + TypeScript + Vite app with a Hono + Neon Postgres backend, a live Claude API integration, and a CAMA Proof Layer. 41 tests in CI. [Live demo](https://telos-kalos.vercel.app).
+2. **[cama](https://github.com/LoriensLibrary/cama)** — Python MCP server, schema enforces provenance discipline, 15-test pytest suite in CI.
+3. **[Project-Companion](https://github.com/LoriensLibrary/Project-Companion)** — design prototype showing CAMA architecture applied to K-12 (UI only; backend integration is roadmap).
+4. *Optional:* skim Paper 1 (CAMA foundation) or Paper 7 (healthcare continuity) from the list below.
+
+**Stack across the portfolio:** TypeScript · React 19 · Vite · Vercel · Hono · Drizzle · Neon Postgres · Python 3.10+ · MCP · SQLite · Anthropic SDK · pytest · Vitest · Tailwind · GitHub Actions CI.
+
+Contact: **lorienslibrary@gmail.com**.
 
 > **For healthcare AI reviewers:** start with Paper 7 (*"Provenance-Aware Memory Architecture for Chronic Healthcare Continuity"*, [DOI 10.5281/zenodo.19261530](https://doi.org/10.5281/zenodo.19261530)) and the Telos_kalos prototype at [telos-kalos.vercel.app](https://telos-kalos.vercel.app).
 
