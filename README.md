@@ -33,7 +33,7 @@ You care about the papers and the theory.
 ### Builder
 You want to see working code.
 - **[cama](https://github.com/LoriensLibrary/cama)** — Python MCP server implementing the memory architecture. 34 core tools plus 9 optional subsystems. 15-test pytest suite in CI. Single-participant operational deployment (~53,000 memories on the author's instance).
-- **[Telos · for Kalos](https://github.com/LoriensLibrary/Telos_kalos)** — full-stack React 19 + TypeScript app with live Claude API integration and a CAMA Proof Layer demonstrating end-to-end provenance trace. 41 tests across 6 suites in CI.
+- **[Telos · for Kalos](https://github.com/LoriensLibrary/Telos_kalos)** — full-stack React 19 + TypeScript app with live Claude API integration and a CAMA Proof Layer demonstrating end-to-end provenance trace. 42 tests across 6 suites in CI.
 - **[Live demo](https://telos-kalos.vercel.app)** — synthetic member data only; backend, Claude integration, and provenance trace are real.
 
 ### Healthcare-AI reviewer
@@ -44,7 +44,7 @@ You're evaluating this for a health-tech context.
 
 ### Collaborator / hiring manager
 Fastest path to evaluate the work:
-1. **[Telos_kalos](https://github.com/LoriensLibrary/Telos_kalos)** — deployed React 19 + TypeScript + Vite app with a Hono + Neon Postgres backend, a live Claude API integration, and a CAMA Proof Layer. 41 tests in CI. [Live demo](https://telos-kalos.vercel.app).
+1. **[Telos_kalos](https://github.com/LoriensLibrary/Telos_kalos)** — deployed React 19 + TypeScript + Vite app with a Hono + Neon Postgres backend, a live Claude API integration, and a CAMA Proof Layer. 42 tests in CI. [Live demo](https://telos-kalos.vercel.app).
 2. **[cama](https://github.com/LoriensLibrary/cama)** — Python MCP server, schema enforces provenance discipline, 15-test pytest suite in CI.
 3. **[Project-Companion](https://github.com/LoriensLibrary/Project-Companion)** — design prototype showing CAMA architecture applied to K-12 (UI only; backend integration is roadmap).
 4. *Optional:* skim Paper 1 (CAMA foundation) or Paper 7 (healthcare continuity) from the list below.
@@ -111,7 +111,7 @@ Two distinct kinds of work sit on top of CAMA:
 
 ### Portfolio prototypes
 
-- **[Telos · for Kalos](https://github.com/LoriensLibrary/Telos_kalos)** — Unofficial applicant prototype built independently by Angela Reinhold for the Kalos Health Software Engineer role. Demonstrates CAMA principles applied to a health-tech coaching context, with a working React 19 + TypeScript app, live Anthropic Claude API integration, persistent draft history, and a CAMA Proof Layer demonstrating end-to-end provenance trace. **Not affiliated with, endorsed by, or representing Kalos Health.** All member data shown is synthetic. **Status:** live at [telos-kalos.vercel.app](https://telos-kalos.vercel.app), CI green, 34 tests across 5 suites. Built as a portfolio piece for a job application — not a Lorien's Library product line.
+- **[Telos · for Kalos](https://github.com/LoriensLibrary/Telos_kalos)** — Unofficial applicant prototype built independently by Angela Reinhold for the Kalos Health Software Engineer role. Demonstrates CAMA principles applied to a health-tech coaching context, with a working React 19 + TypeScript app, live Anthropic Claude API integration, persistent draft history, and a CAMA Proof Layer demonstrating end-to-end provenance trace. **Not affiliated with, endorsed by, or representing Kalos Health.** All member data shown is synthetic. **Status:** live at [telos-kalos.vercel.app](https://telos-kalos.vercel.app), CI green, 42 tests across 6 suites. Built as a portfolio piece for a job application — not a Lorien's Library product line.
 
 ### Future verticals (research-stage)
 
