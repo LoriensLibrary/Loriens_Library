@@ -55,7 +55,7 @@ You're evaluating this for a health-tech context.
 
 ### Collaborator / hiring manager
 Fastest path to evaluate the work:
-1. **[Telos_kalos](https://github.com/LoriensLibrary/Telos_kalos)** — deployed React 19 + TypeScript + Vite app with a Hono + Neon Postgres backend, a live Claude API integration, and a CAMA Proof Layer. 42 tests in CI. [Live demo](https://telos-kalos.vercel.app).
+1. **[Telos_kalos](https://github.com/LoriensLibrary/Telos_kalos)** — deployed React 19 + TypeScript + Vite app with a serverless Hono + Drizzle + Neon Claude-API route powering the live AI Inbox (rest of the app reads synthetic seeds; full data-layer persistence is roadmap). CAMA Proof Layer demonstrates end-to-end provenance trace. 42 tests in CI. [Live demo](https://telos-kalos.vercel.app).
 2. **[cama](https://github.com/LoriensLibrary/cama)** — Python MCP server + eight-layer multi-tenant architecture. Schema enforces provenance discipline. 187 tests in CI. `v0.1.0` tagged.
 3. **[Project-Companion](https://github.com/LoriensLibrary/Project-Companion)** — design prototype showing CAMA architecture applied to K-12 (UI only; backend integration is roadmap).
 4. *Optional:* skim Paper 1 (CAMA foundation) or Paper 7 (healthcare continuity) from the list below.
