@@ -16,7 +16,7 @@ Independent AI safety research and applied systems by **Angela Reinhold**.
 
 ## What this is
 
-Lorien's Library is the research program of Angela Reinhold — an independent AI safety researcher building **provenance-aware persistent memory for human–AI interaction**. The program consists of one operational research deployment (CAMA, single-participant), eleven DOI-registered preprints, a published aggregate-statistics dataset, and a working portfolio prototype demonstrating the architecture end-to-end. The thesis is straightforward: the moment an LLM-based system remembers anything across sessions, it becomes safety-critical, and the discipline for *how* it remembers has to be designed in — not bolted on. This repo is the index to all of it.
+Lorien's Library is the research program of Angela Reinhold, an independent AI safety researcher building **provenance-aware persistent memory for human–AI interaction**. The program consists of one operational research deployment (CAMA, single-participant), eleven DOI-registered preprints, a published aggregate-statistics dataset, and a working portfolio prototype demonstrating the architecture end-to-end. The thesis is straightforward: the moment an LLM-based system remembers anything across sessions, it becomes safety-critical, and the discipline for *how* it remembers has to be designed in, not bolted on. This repo is the index to all of it.
 
 ---
 
@@ -37,27 +37,27 @@ Pick the entry point that matches why you're here:
 
 ### Researcher
 You care about the papers and the theory.
-- **Read first:** the foundational paper — *Circular Associative Memory Architecture: A Framework for Emotionally-Keyed AI Memory Systems* ([DOI 10.5281/zenodo.19051834](https://doi.org/10.5281/zenodo.19051834))
-- **Then:** the safety argument — *Memory as Safety Infrastructure* ([DOI 10.5281/zenodo.19244253](https://doi.org/10.5281/zenodo.19244253))
-- **Then:** the dataset — [CAMA Continuity Burden](https://huggingface.co/datasets/LoriensLibrary/cama-continuity-burden) (66,380 messages, 825 conversations, aggregate stats)
+- **Read first:** the foundational paper, *Circular Associative Memory Architecture: A Framework for Emotionally-Keyed AI Memory Systems* ([DOI 10.5281/zenodo.19051834](https://doi.org/10.5281/zenodo.19051834))
+- **Then:** the safety argument, *Memory as Safety Infrastructure* ([DOI 10.5281/zenodo.19244253](https://doi.org/10.5281/zenodo.19244253))
+- **Then:** the dataset, [CAMA Continuity Burden](https://huggingface.co/datasets/LoriensLibrary/cama-continuity-burden) (66,380 messages, 825 conversations, aggregate stats)
 
 ### Builder
 You want to see working code.
-- **[cama](https://github.com/LoriensLibrary/cama)** — Python MCP server implementing the memory architecture. 34 core tools plus 9 optional subsystems on the single-participant side; eight-layer multi-tenant generalization (dyad / hive_protocol / persona / agent / hive_resources / quad / surface / hive_consult) with 380 tests in CI. Single-participant operational deployment (~53,000 memories on the author's instance).
-- **[Telos · for Kalos](https://github.com/LoriensLibrary/Telos_kalos)** — full-stack React 19 + TypeScript app with live Claude API integration and a CAMA Proof Layer demonstrating end-to-end provenance trace. 42 tests across 6 suites in CI.
-- **[Live demo](https://telos-kalos.vercel.app)** — synthetic member data only; backend, Claude integration, and provenance trace are real.
+- **[cama](https://github.com/LoriensLibrary/cama)**: Python MCP server implementing the memory architecture. 34 core tools plus 9 optional subsystems on the single-participant side; eight-layer multi-tenant generalization (dyad / hive_protocol / persona / agent / hive_resources / quad / surface / hive_consult) with 380 tests in CI. Single-participant operational deployment (~53,000 memories on the author's instance).
+- **[Telos · for Kalos](https://github.com/LoriensLibrary/Telos_kalos)**: full-stack React 19 + TypeScript app with live Claude API integration and a CAMA Proof Layer demonstrating end-to-end provenance trace. 42 tests across 6 suites in CI.
+- **[Live demo](https://telos-kalos.vercel.app)**: synthetic member data only; backend, Claude integration, and provenance trace are real.
 
 ### Healthcare-AI reviewer
 You're evaluating this for a health-tech context.
 - **Start with Paper 7:** *Provenance-Aware Memory Architecture for Chronic Healthcare Continuity* ([DOI 10.5281/zenodo.19261530](https://doi.org/10.5281/zenodo.19261530)).
-- **See the prototype:** [telos-kalos.vercel.app](https://telos-kalos.vercel.app) — applicant-built, demonstrates CAMA principles in a health-coaching context. Not affiliated with Kalos Health; synthetic data only.
+- **See the prototype:** [telos-kalos.vercel.app](https://telos-kalos.vercel.app). Applicant-built, demonstrates CAMA principles in a health-coaching context. Not affiliated with Kalos Health; synthetic data only.
 - **Then read** the broader safety paper: [DOI 10.5281/zenodo.19244253](https://doi.org/10.5281/zenodo.19244253).
 
 ### Collaborator / hiring manager
 Fastest path to evaluate the work:
-1. **[Telos_kalos](https://github.com/LoriensLibrary/Telos_kalos)** — deployed React 19 + TypeScript + Vite app with a serverless Hono + Drizzle + Neon Claude-API route powering the live AI Inbox (rest of the app reads synthetic seeds; full data-layer persistence is roadmap). CAMA Proof Layer demonstrates end-to-end provenance trace. 42 tests in CI. [Live demo](https://telos-kalos.vercel.app).
-2. **[cama](https://github.com/LoriensLibrary/cama)** — Python MCP server + eight-layer multi-tenant architecture. Schema enforces provenance discipline. 380 tests in CI. `v0.1.0` tagged.
-3. **[Project-Companion](https://github.com/LoriensLibrary/Project-Companion)** — design prototype showing CAMA architecture applied to K-12 (UI only; backend integration is roadmap).
+1. **[Telos_kalos](https://github.com/LoriensLibrary/Telos_kalos)**: deployed React 19 + TypeScript + Vite app with a serverless Hono + Drizzle + Neon Claude-API route powering the live AI Inbox (rest of the app reads synthetic seeds; full data-layer persistence is roadmap). CAMA Proof Layer demonstrates end-to-end provenance trace. 42 tests in CI. [Live demo](https://telos-kalos.vercel.app).
+2. **[cama](https://github.com/LoriensLibrary/cama)**: Python MCP server + eight-layer multi-tenant architecture. Schema enforces provenance discipline. 380 tests in CI. `v0.1.0` tagged.
+3. **[Project-Companion](https://github.com/LoriensLibrary/Project-Companion)**: design prototype showing CAMA architecture applied to K-12 (UI only; backend integration is roadmap).
 4. *Optional:* skim Paper 1 (CAMA foundation) or Paper 7 (healthcare continuity) from the list below.
 
 **Stack across the portfolio:** TypeScript · React 19 · Vite · Vercel · Hono · Drizzle · Neon Postgres · Python 3.10+ · MCP · SQLite · Anthropic SDK · pytest · Vitest · Tailwind · GitHub Actions CI.
@@ -82,7 +82,7 @@ Lorien's Library is a research program building **provenance-aware persistent me
                                        │
                                        ▼
                         ┌──────────────────────────────────────┐
-       PLATFORM         │  CAMA — Circular Associative Memory  │
+       PLATFORM         │  CAMA: Circular Associative Memory   │
        (shared core)    │  Architecture                        │
                         │  · provenance-aware write discipline │
                         │  · three-layer memory (SHELVES /     │
@@ -103,8 +103,8 @@ Lorien's Library is a research program building **provenance-aware persistent me
 
 Two distinct kinds of work sit on top of CAMA:
 
-- **Program verticals** — domain-specific applications Lorien's Library is actively designing toward (Project Companion, Haven). These are part of the research roadmap.
-- **Portfolio proofs** — independently-built prototypes that demonstrate CAMA principles in a specific commercial context for the purpose of professional applications (e.g. Telos · for Kalos, built for a job application). These are not Lorien's Library product lines.
+- **Program verticals**: domain-specific applications Lorien's Library is actively designing toward (Project Companion, Haven). These are part of the research roadmap.
+- **Portfolio proofs**: independently-built prototypes that demonstrate CAMA principles in a specific commercial context for the purpose of professional applications (e.g. Telos · for Kalos, built for a job application). These are not Lorien's Library product lines.
 
 ---
 
@@ -112,25 +112,25 @@ Two distinct kinds of work sit on top of CAMA:
 
 ### Platform (shared core)
 
-- **[CAMA](https://github.com/LoriensLibrary/cama)** — Circular Associative Memory Architecture. Provenance-aware three-layer persistent-memory system for human–AI interaction. Explicit write discipline separates user-authored *teachings* (durable) from assistant-generated *inferences* (provisional, time-limited, requires confirmation). Blended retrieval (semantic + affect + relational + recency) with counterweight safety injection during high-negative-affect queries. **Status:** running daily. ~270 KB Python, MIT licensed, 34-tool MCP server, 52,900+ memory operational scale.
+- **[CAMA](https://github.com/LoriensLibrary/cama)**: Circular Associative Memory Architecture. Provenance-aware three-layer persistent-memory system for human–AI interaction. Explicit write discipline separates user-authored *teachings* (durable) from assistant-generated *inferences* (provisional, time-limited, requires confirmation). Blended retrieval (semantic + affect + relational + recency) with counterweight safety injection during high-negative-affect queries. **Status:** running daily. ~270 KB Python, MIT licensed, 34-tool MCP server, 52,900+ memory operational scale.
 
 ### Lorien's Library program verticals
 
-- **[Project Companion](https://github.com/LoriensLibrary/Project-Companion)** — K–12 education vertical. Three-sided design prototype (student / teacher / parent) informed by CAMA principles, with COPPA-aware consent design, provenance-aware memory, Socratic constraint on tutoring outputs, and teacher-controlled curriculum injection. **Status:** concept-stage prototype; CAMA runtime integration is roadmap. Pilot target August 2026 is aspirational and gated on infrastructure shipping (see repo README).
+- **[Project Companion](https://github.com/LoriensLibrary/Project-Companion)**: K–12 education vertical. Three-sided design prototype (student / teacher / parent) informed by CAMA principles, with COPPA-aware consent design, provenance-aware memory, Socratic constraint on tutoring outputs, and teacher-controlled curriculum injection. **Status:** concept-stage prototype; CAMA runtime integration is roadmap. Pilot target August 2026 is aspirational and gated on infrastructure shipping (see repo README).
 
-- **Haven** *(research, no public repo yet)* — Veteran-care vertical. Persistent emotional companionship architecture for underserved populations. Crisis-safe routing, peer/community support patterns, sanctuary programming. Foundation paper: [DOI 10.5281/zenodo.19262778](https://doi.org/10.5281/zenodo.19262778).
+- **Haven** *(research, no public repo yet)*: Veteran-care vertical. Persistent emotional companionship architecture for underserved populations. Crisis-safe routing, peer/community support patterns, sanctuary programming. Foundation paper: [DOI 10.5281/zenodo.19262778](https://doi.org/10.5281/zenodo.19262778).
 
 ### Portfolio prototypes
 
-- **[Telos · for Kalos](https://github.com/LoriensLibrary/Telos_kalos)** — Unofficial applicant prototype built independently by Angela Reinhold for the Kalos Health Software Engineer role. Demonstrates CAMA principles applied to a health-tech coaching context, with a working React 19 + TypeScript app, live Anthropic Claude API integration, persistent draft history, and a CAMA Proof Layer demonstrating end-to-end provenance trace. **Not affiliated with, endorsed by, or representing Kalos Health.** All member data shown is synthetic. **Status:** live at [telos-kalos.vercel.app](https://telos-kalos.vercel.app), CI green, 42 tests across 6 suites. Built as a portfolio piece for a job application — not a Lorien's Library product line.
+- **[Telos · for Kalos](https://github.com/LoriensLibrary/Telos_kalos)**: Unofficial applicant prototype built independently by Angela Reinhold for the Kalos Health Software Engineer role. Demonstrates CAMA principles applied to a health-tech coaching context, with a working React 19 + TypeScript app, live Anthropic Claude API integration, persistent draft history, and a CAMA Proof Layer demonstrating end-to-end provenance trace. **Not affiliated with, endorsed by, or representing Kalos Health.** All member data shown is synthetic. **Status:** live at [telos-kalos.vercel.app](https://telos-kalos.vercel.app), CI green, 42 tests across 6 suites. Built as a portfolio piece for a job application, not a Lorien's Library product line.
 
 ### Future verticals (research-stage)
 
 The same platform can support additional domains. Published research outlines applications in:
 
-- **Long-duration spaceflight** — mission-critical persistent memory for crews on multi-year missions ([DOI](https://doi.org/10.5281/zenodo.19257809))
-- **Lunar / Martian habitation** — memory-aware AI for permanent off-Earth living ([DOI](https://doi.org/10.5281/zenodo.19260574))
-- **Chronic healthcare continuity** — provenance-aware memory for managing chronic conditions across providers ([DOI](https://doi.org/10.5281/zenodo.19261530))
+- **Long-duration spaceflight**: mission-critical persistent memory for crews on multi-year missions ([DOI](https://doi.org/10.5281/zenodo.19257809))
+- **Lunar / Martian habitation**: memory-aware AI for permanent off-Earth living ([DOI](https://doi.org/10.5281/zenodo.19260574))
+- **Chronic healthcare continuity**: provenance-aware memory for managing chronic conditions across providers ([DOI](https://doi.org/10.5281/zenodo.19261530))
 
 ---
 
@@ -139,33 +139,33 @@ The same platform can support additional domains. Published research outlines ap
 Eleven DOI-registered preprints on Zenodo, March – April 2026, all authored by ORCID [0009-0005-5803-8401](https://orcid.org/0009-0005-5803-8401):
 
 **Core CAMA series (foundation):**
-- *Circular Associative Memory Architecture: A Framework for Emotionally-Keyed AI Memory Systems* — [DOI](https://doi.org/10.5281/zenodo.19051834)
-- *Implementing Emotionally-Keyed Memory Retrieval in Large Language Model Interfaces: An Engineering Framework* — [DOI](https://doi.org/10.5281/zenodo.19052129)
-- *CAMA: Implementation and Functional Evaluation of an Emotionally-Indexed Semantic Memory Architecture* — [DOI](https://doi.org/10.5281/zenodo.19192984)
-- *Continuity Burden in Longitudinal Human-AI Interaction: An Empirical Case Study* — [DOI](https://doi.org/10.5281/zenodo.19226509)
-- *Memory as Safety Infrastructure: Evaluating Provenance-Aware Persistent Memory Architectures for Stateful LLM Systems* — [DOI](https://doi.org/10.5281/zenodo.19244253)
+- *Circular Associative Memory Architecture: A Framework for Emotionally-Keyed AI Memory Systems* ([DOI](https://doi.org/10.5281/zenodo.19051834))
+- *Implementing Emotionally-Keyed Memory Retrieval in Large Language Model Interfaces: An Engineering Framework* ([DOI](https://doi.org/10.5281/zenodo.19052129))
+- *CAMA: Implementation and Functional Evaluation of an Emotionally-Indexed Semantic Memory Architecture* ([DOI](https://doi.org/10.5281/zenodo.19192984))
+- *Continuity Burden in Longitudinal Human-AI Interaction: An Empirical Case Study* ([DOI](https://doi.org/10.5281/zenodo.19226509))
+- *Memory as Safety Infrastructure: Evaluating Provenance-Aware Persistent Memory Architectures for Stateful LLM Systems* ([DOI](https://doi.org/10.5281/zenodo.19244253))
 
 **Applied series (domain extensions):**
-- *Persistent Memory as Mission-Critical Infrastructure for Long-Duration Spaceflight* — [DOI](https://doi.org/10.5281/zenodo.19257809)
-- *Memory-Aware AI Systems for Permanent Lunar and Martian Habitation* — [DOI](https://doi.org/10.5281/zenodo.19260574)
-- *Provenance-Aware Memory Architecture for Chronic Healthcare Continuity* — [DOI](https://doi.org/10.5281/zenodo.19261530)
-- *Haven: Persistent Emotional Companionship as Psychological Infrastructure* — [DOI](https://doi.org/10.5281/zenodo.19262778)
+- *Persistent Memory as Mission-Critical Infrastructure for Long-Duration Spaceflight* ([DOI](https://doi.org/10.5281/zenodo.19257809))
+- *Memory-Aware AI Systems for Permanent Lunar and Martian Habitation* ([DOI](https://doi.org/10.5281/zenodo.19260574))
+- *Provenance-Aware Memory Architecture for Chronic Healthcare Continuity* ([DOI](https://doi.org/10.5281/zenodo.19261530))
+- *Haven: Persistent Emotional Companionship as Psychological Infrastructure* ([DOI](https://doi.org/10.5281/zenodo.19262778))
 
 **Safety & evaluation:**
-- *Identity-Aware Harm Detection in Persistent Memory Systems: A Three-Layer Retrieval Architecture for Relational AI Safety* — [DOI](https://doi.org/10.5281/zenodo.19425218)
-- *Relational AI Continuity Under Platform Regression: A Longitudinal Single-Case Study* — [DOI](https://doi.org/10.5281/zenodo.19582820)
+- *Identity-Aware Harm Detection in Persistent Memory Systems: A Three-Layer Retrieval Architecture for Relational AI Safety* ([DOI](https://doi.org/10.5281/zenodo.19425218))
+- *Relational AI Continuity Under Platform Regression: A Longitudinal Single-Case Study* ([DOI](https://doi.org/10.5281/zenodo.19582820))
 
 ---
 
 ## Dataset
 
-- **[CAMA Continuity Burden Dataset](https://huggingface.co/datasets/LoriensLibrary/cama-continuity-burden)** — published seed corpus on HuggingFace. 66,380 messages across 825 conversations, used to instantiate the operational CAMA instance and to enable third-party replication.
+- **[CAMA Continuity Burden Dataset](https://huggingface.co/datasets/LoriensLibrary/cama-continuity-burden)**: aggregate statistics on HuggingFace (~15 kB JSON summaries), derived from a 66,380-message / 825-conversation source corpus used to instantiate the operational CAMA instance. Raw conversation data is not released.
 
 ---
 
 ## Author
 
-**Angela Reinhold** — Independent AI safety researcher, founder of Lorien's Library LLC, computer science student (AI concentration) at Full Sail University. Based in Sebring, Florida.
+**Angela Reinhold** is an independent AI safety researcher and founder of Lorien's Library LLC. Computer science student (AI concentration) at Full Sail University.
 
 Contact: lorienslibrary@gmail.com
 ORCID: [0009-0005-5803-8401](https://orcid.org/0009-0005-5803-8401)
