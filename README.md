@@ -24,7 +24,7 @@ Lorien's Library is the research program of Angela Reinhold — an independent A
 
 | Repository | Type | Status | Best for |
 |---|---|---|---|
-| [cama](https://github.com/LoriensLibrary/cama) | Core architecture | Operational research deployment (single-participant); multi-tenant 8-layer generalization shipped; 187 tests in CI; `v0.1.0` tagged | AI safety reviewers, infrastructure engineers |
+| [cama](https://github.com/LoriensLibrary/cama) | Core architecture | Operational research deployment (single-participant); multi-tenant 8-layer generalization shipped; 380 tests in CI; `v0.1.0` tagged | AI safety reviewers, infrastructure engineers |
 | [Telos_kalos](https://github.com/LoriensLibrary/Telos_kalos) | Applied prototype | Live deployed app with live Claude integration; 42 tests in CI; `v0.1.0` tagged | Employers / health-tech / hiring managers |
 | [Project-Companion](https://github.com/LoriensLibrary/Project-Companion) | Education design prototype | Design-stage UI; MVP CAMA read integration; write integration + backend proxy + COPPA consent are roadmap | School pilots, ed-tech reviewers |
 | [Continuity Burden Dataset](https://huggingface.co/datasets/LoriensLibrary/cama-continuity-burden) | Open dataset | Aggregate statistics published on HuggingFace | Researchers replicating continuity-burden measurement |
@@ -43,7 +43,7 @@ You care about the papers and the theory.
 
 ### Builder
 You want to see working code.
-- **[cama](https://github.com/LoriensLibrary/cama)** — Python MCP server implementing the memory architecture. 34 core tools plus 9 optional subsystems on the single-participant side; eight-layer multi-tenant generalization (dyad / hive_protocol / persona / agent / hive_resources / quad / surface / hive_consult) with 187 tests in CI. Single-participant operational deployment (~53,000 memories on the author's instance).
+- **[cama](https://github.com/LoriensLibrary/cama)** — Python MCP server implementing the memory architecture. 34 core tools plus 9 optional subsystems on the single-participant side; eight-layer multi-tenant generalization (dyad / hive_protocol / persona / agent / hive_resources / quad / surface / hive_consult) with 380 tests in CI. Single-participant operational deployment (~53,000 memories on the author's instance).
 - **[Telos · for Kalos](https://github.com/LoriensLibrary/Telos_kalos)** — full-stack React 19 + TypeScript app with live Claude API integration and a CAMA Proof Layer demonstrating end-to-end provenance trace. 42 tests across 6 suites in CI.
 - **[Live demo](https://telos-kalos.vercel.app)** — synthetic member data only; backend, Claude integration, and provenance trace are real.
 
@@ -56,7 +56,7 @@ You're evaluating this for a health-tech context.
 ### Collaborator / hiring manager
 Fastest path to evaluate the work:
 1. **[Telos_kalos](https://github.com/LoriensLibrary/Telos_kalos)** — deployed React 19 + TypeScript + Vite app with a serverless Hono + Drizzle + Neon Claude-API route powering the live AI Inbox (rest of the app reads synthetic seeds; full data-layer persistence is roadmap). CAMA Proof Layer demonstrates end-to-end provenance trace. 42 tests in CI. [Live demo](https://telos-kalos.vercel.app).
-2. **[cama](https://github.com/LoriensLibrary/cama)** — Python MCP server + eight-layer multi-tenant architecture. Schema enforces provenance discipline. 187 tests in CI. `v0.1.0` tagged.
+2. **[cama](https://github.com/LoriensLibrary/cama)** — Python MCP server + eight-layer multi-tenant architecture. Schema enforces provenance discipline. 380 tests in CI. `v0.1.0` tagged.
 3. **[Project-Companion](https://github.com/LoriensLibrary/Project-Companion)** — design prototype showing CAMA architecture applied to K-12 (UI only; backend integration is roadmap).
 4. *Optional:* skim Paper 1 (CAMA foundation) or Paper 7 (healthcare continuity) from the list below.
 
